@@ -1,6 +1,9 @@
 /* shared style */
 * {
     font-family: 'Work Sans', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 
 }
 
@@ -116,6 +119,66 @@ ul li a {
     }
 
 }
+/* header design end here */
+/* main design starts here */
+main {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+main section {
+    
+}
+/* feature section design starts here */
+.teams-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    margin-top: 100px;
+}
+
+.teams-img-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+}
+
+.teams-img-container img {
+    width: 300px;
+    height: 300px;
+}
+
+.teams-content {
+    padding-left: 70px;
+    padding-right: 70px;
+    text-align: left;
+}
+
+.teams-title {
+    font-size: 2.7rem;
+    font-weight: 500;
+
+}
+
+.quick-list {
+    color: #727272;
+}
+
+.of-our {
+    color: #131313;
+}
+
+.features {
+    color: #FF900E;
+}
+
+.teams-description {
+    font-weight: 400;
+    line-height: 162.5%;
+}
+
+
+/* feature section design ends here */
 
 
 /* banner styles ends here */
