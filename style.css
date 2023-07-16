@@ -7,6 +7,11 @@
 
 }
 
+img {
+    max-width: 100%;
+    vertical-align: middle;
+}
+
 .section-title {
     color: #131313;
     font-size: 3rem;
@@ -168,6 +173,58 @@ main section {
 /* teams section design ends here */
 
 /* features section design starts here */
+.features {
+    /* background-color: aquamarine; */
+    margin-top: 130px;
+    display: flex;
+    gap: 50px;
+}
+
+
+
+.features-content {
+    width: 50%;
+}
+
+.features .section-title {
+    border-left: 5px solid #FF900E;
+    padding-left: 20px;
+}
+
+.features .card {
+    padding: 10px 20px;
+    box-shadow: 0px 4px 30px 0px rgba(0, 0, 0, 0.06);
+    margin-top: 15px;
+}
+
+.features-img {
+    width: 50%;
+    position: relative;
+}
+
+.features-img .ten-years-badge {
+    position: absolute;
+    bottom: 90px;
+    left: -40px;
+    width: 252px;
+    border-radius: 8px;
+    background: #FF900E;
+    padding: 40px;
+    color: #fff;
+    text-align: center;
+}
+
+.features-img .ten-years-badge h3 {
+font-size: 30px;
+font-weight: 700; /* 107.692% */
+}
+
+.features-img .ten-years-badge h2 {
+font-size: 30px;
+font-weight: 700; /* 107.692% */
+}
+
+
 /* features section design ends here */
 
 /* facts section design starts here */
