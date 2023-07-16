@@ -7,6 +7,12 @@
 
 }
 
+.section-title {
+    color: #131313;
+    font-size: 3rem;
+    font-weight: 700;
+}
+
 .text-light-gray {
     color: #727272;
     line-height: 1.8;
@@ -36,6 +42,7 @@ header {
 }
 
 nav {
+    padding: 30px 0;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -70,10 +77,10 @@ ul li a {
 .banner-content {
     /* display: flex;
     flex-direction: column; */
+    padding: 50px 0;
     text-align: center;
     margin: 0 auto;
     max-width: 800px;
-    text-align: center;
 }
 
 .banner-content .banner-title {
@@ -97,8 +104,9 @@ ul li a {
     width: 100%;
 }
 
+/* banner styles ends here */
+/* header styles ends here */
 
-/* header design end here */
 /* main design starts here */
 main {
     max-width: 1000px;
@@ -108,7 +116,7 @@ main {
 main section {
     
 }
-/* feature section design starts here */
+/* teams section design starts here */
 .teams-container {
     display: flex;
     align-items: center;
@@ -157,14 +165,66 @@ main section {
     margin: 20px 0;
 }
 
+/* teams section design ends here */
+
+/* features section design starts here */
+/* features section design ends here */
+
+/* facts section design starts here */
+.facts {}
+
+.facts .facts-description {
+    /* width: 542px; */
+}
+
+.facts-card-container {
+    display: flex;
+    justify-content: space-around;
+    padding: 50px 0;
+}
+
+.facts-card-container .card {
+    border-radius: 8px;
+border: 1px solid #FF900E;
+text-align: center;
+padding: 30px;
+}
+
+.facts-card-container .card-stats  {
+    font-size: 2.8rem;
+    color: #424242;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.facts-card-container .card-title  {
+    font-size: 1.25rem;
+    font-weight: 600;
+    color: #727272;
+    margin-top: 5px;
+}
+/* facts section design ends here */
+
+/* sponsor section design starts here */
+.sponsors {
+    text-align: center;
+    padding: 40px 0;
+}
+
+.sponsors-img-container {
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.sponsors-img-container img {
+    width: 165px;
+    height: 50px;
+}
+/* sponsor section design ends here */
 
 
-
-/* feature section design ends here */
-
-
-/* banner styles ends here */
-/* header styles ends here */
 
 /* responsive design */
 /* responsive styles */
@@ -174,7 +234,7 @@ main section {
         padding: 20px;
     }
 
-    nav, .teams-container {
+    nav, .teams-container, .facts-card-container, .sponsors-img-container {
         flex-direction: column;
     }
 
@@ -182,15 +242,36 @@ main section {
         font-size: 2rem;
     }
 
+    .teams-title {
+        margin-top: 20px;
+    }
+
     .teams-img-container {
         display: grid;
         grid-template-columns: 1fr;
     }
 
-    .teams-content {
+    .teams-content, .facts-card-container {
         padding-left: 40px;
         padding-right: 40px;
     }
+
+    /* facts starts */
+    .facts {
+        text-align: center;
+        padding: 0 20px;
+    }
+
+    .facts-card-container {
+        gap: 20px;
+    }
+    /* facts ends */
+
+    /* sponsors starts */
+    .sponsors-img-container {
+        align-items: center;
+    }
+    /* sponsors ends */
 }
 /* medium devices */
 @media screen and (min-width: 576px ) and (max-width: 960px) {
@@ -200,6 +281,10 @@ main section {
 
     nav, .teams-container {
         flex-direction: column;
+    }
+
+    .facts-card-container {
+        gap: 10px;
     }
 
 }
