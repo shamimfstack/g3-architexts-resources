@@ -285,6 +285,24 @@ padding: 30px;
 }
 /* sponsor section design ends here */
 
+/* main section design ends here */
+
+/* footer section starts here */
+.footer-content {
+    border-radius: 8px;
+background: #FFF4E7;
+text-align: center;
+padding: 40px 0;
+/* margin-bottom: 400px; */
+margin: 100px 200px;
+}
+
+.footer-content p {
+    color:  #424242;
+    font-size: 20px;
+    font-weight: 400;
+}
+/* footer section ends here */
 
 
 /* responsive design */
@@ -354,6 +372,12 @@ padding: 30px;
         align-items: center;
     }
     /* sponsors ends */
+
+    /* footer starts */
+    .footer-content {
+        margin: 50px;
+    }
+    /* footer ends */
 }
 /* medium devices */
 @media screen and (min-width: 576px ) and (max-width: 960px) {
@@ -376,6 +400,10 @@ padding: 30px;
     .features-img img {
         width: 100%;
         margin-left: 0;
+    }
+
+    .footer-content {
+        margin: 50px 0;
     }
 
 }
